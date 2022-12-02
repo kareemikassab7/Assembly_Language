@@ -1,0 +1,36 @@
+############################################################## Kareem Kassab #######################################################################
+Assignment 4
+
+Hello, This assignment is composed of four programs:
+
+1- BubbleSort (mips) 
+Filename: Bubblesort.asm
+
+-This program take the size of the array from the user
+-takes inputs in the array
+-then operates recursively to rearrange the values in the array ascendingly
+-the values on the screen are displayed separated by commas
+
+2- Binary Search (mips)
+Filename: BinarySearch.asm
+- Note: this program operates recursively.
+- this program will take the input  size from the user
+- then it will take an array
+- take the required number to be searched for.
+- if it locates the element it rreturns its index
+- if it doesnt it returns -1
+- Note: this program is not finished yet
+
+3- BubbleSort (x86)
+Filename: BubbleSortAsm.asm
+- this program will take the input from the user
+- rearrange the elemens in an ascending manner but not in a recursive way
+- Note: this program is not finished yet
+
+4- Binary Search (x86)
+Filename: BinarySearchAsm.asm
+- this program will take the input from the user
+- take the required number to e searched for.
+- if it locates the element it rreturns its indext
+- if it doesnt it returns -1
+- Note: this program is not finished yet

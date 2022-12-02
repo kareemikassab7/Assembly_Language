@@ -1,0 +1,38 @@
+################################################ Kareem Kassab ################################### 900182771 ################################ April 2nd 2020
+
+Hello, This is a report for the baby lizards program (a little tweak on the N-queens where trees shield lizards from attacks)
+The program is written in 3 different assemblies Mips, RiscV, and X86
+
+1- Mips (Filename: LizardsMips)
+- the program takes the width= height from the user
+- it asks for the number of trees and inouts them witht he indices in a loop
+- the program moves on each column (from left to right) from up to down. 
+- it checks whether the element is 0(free), 1(a lizard), 2(a tree), or 3( unsafe to place)
+- if its a lizard or tree or unsafe it passes to next element
+- if the palce is free it places a lizard and calls the safety update
+- in the safety update, a function calculates the index we are in and traverses in 8 directions  (right, left, up, down, right up diagonal, right down diagonal, left up diagonal, left down diagonal). until it reaches the borders and marks these areas unsafe. it stops at the borders or when it faces a tree (to create the masking effect)
+- it loops over the whole array and then it replaces the remaining 3's with zeroes for the correct display.
+
+2- RISCV(Filename: LizardsRISCV)
+- the program takes the width= height from the user
+- it asks for the number of trees and inouts them witht he indices in a loop
+- the program moves on each column (from left to right) from up to down. 
+- it checks whether the element is 0(free), 1(a lizard), 2(a tree), or 3( unsafe to place)
+- if its a lizard or tree or unsafe it passes to next element
+- if the palce is free it places a lizard and calls the safety update
+- in the safety update, a function calculates the index we are in and traverses in 8 directions  (right, left, up, down, right up diagonal, right down diagonal, left up diagonal, left down diagonal). until it reaches the borders and marks these areas unsafe. it stops at the borders or when it faces a tree (to create the masking effect)
+- it loops over the whole array and then it replaces the remaining 3's with zeroes for the correct display.
+
+3- X86 (Filename: LizardsX86)
+- This Program is static, it does not operate on user enetered data
+- It works on size n=8, on the same tree setup that yielded 9 trees in the mips version to trest the ahrdest case
+- it works with the same machanisms and has the same function names
+- there are some predefined data that is used in place of immediates
+- comments indicate the rest
+
+
+
+
+
+ISSUES:
+The program puts N lizards and sometime more not always more. (there is a screen where there is 9 in a 8x8 box)

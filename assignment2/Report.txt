@@ -1,0 +1,31 @@
+Kareem Kassab    900182771
+
+I did not have any assumptions (I learned the tools to make the problems from the slides, books, the manual, and internet video then wrote the problem)
+
+Program 1 (Maximum and minimum)
+###This program required me to learn how to make an array and loop over it with points and compare values####
+1- I created a large array
+2- I asked the user about the size of the array he wants to fill
+3- the user fills the calues through the code 5 normally
+4- the programsets both the maximum and minimum to the same value then begins comparing them
+5- whenver there is less than the minimum or r more than the maxuimum its updated.
+6- the program prints both the maximum and the minimum
+
+
+Program 2 (Even or Odd, Prime or Not)
+I started with this one as I thought its the easiest. it was tricky though.
+1- I found it easier to check if the number is prime first as all prime numbners are odd except the 2, so I made it to check prime first
+2- I checked the eveness and oddness through dividing the number by 2 and checking the remainder in the HI register.
+3- I had to make special cases for 0, 1 ,and 2. I did not prefer that, so I started the counter from 2, and treated the 2 normally.
+
+Program 3 (The Palindrome)
+###This program required me checking inputing and characters, in addtion to loading bytes unsigned due to errors.### the ability to make an array and loop with pointers carried from problem 1###
+
+1- I got the size from the user through the code 5 normally
+2- I created 2 pointers, 1 at the beggining and the other at the end
+
+IMPORTANT TRICK: decrement the end pointer by 2, 1 for the null character and another for the character I increased for the null one.
+
+3- The 2 pointers looped approaching the center and checked a character by character.
+4- when the loop is done finding no differnces, it prints that this is a palindrome
+5- if not, it goes to needs change, and changes copying the letter nearer to the nede (according to the sample)
